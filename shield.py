@@ -150,7 +150,7 @@ def action(event):
 	
 	Factor=(Perm[Pr.get()]*float(Distance.get())*float(Distance.get()))/(float(Workload.get())*Occp[Op.get()]*Usef[Uf.get()])
 	print(Factor)
-	out.config(text=f"{round(Factor,4)}")
+	out.config(text=f"{round(Factor,8)}")
 	
 	n=-1*math.log10(Factor)
 	print(n)
